@@ -45,7 +45,7 @@ Use the copy function below to do the following:
   2. Return a copy of the received array  
 */
 
-
+      //CORRECT
 function copy(array){
   return array
 }
@@ -61,7 +61,7 @@ Confirm that an array is exactly 31 flavors. Your function should accept:
 
 For Example: is31Flavors(originalFlavors) will return true if your code is working properly
 */
-
+     //CORRECT
 function is31Flavors(array){
   if (array.length === 31) {
     return true
@@ -86,12 +86,14 @@ Use the addFlavor function below to do the following:
 */
 
 function addFlavor(array, string){
-  let newArray = array.unshift(string)
-  return newArray
+  array.unshift(string)
+  return array
  }
 
-addFlavor(originalFlavors, "Rainbow Sherbert")
-console.log(originalFlavors)
+// addFlavor(originalFlavors, "Rainbow Sherbert")
+// console.log(addFlavor(originalFlavors, "Rainbow Sherbert"))
+
+
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -105,13 +107,11 @@ Use the removeLastFlavor function below to do the following:
   For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
 
-
 function removeLastFlavor(array){
-  const newArray = array.pop()
-  return newArray
+  array.pop()
+  return array
 }
-removeLastFlavor(originalFlavors)
-console.log(originalFlavors)
+
 
 
 
@@ -125,12 +125,12 @@ Use the getFlavorByIndex function below to do the following:
 
   For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
 */
-
+//CORRECT
 function getFlavorByIndex(array, number){
   const newArray = array[number]
   return newArray
 }
-console.log(getFlavorByIndex(originalFlavors, 2))
+
 
 
 
@@ -148,9 +148,10 @@ Use the removeFlavorByName function below to do the following:
   HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
-  /*your code here*/
+function removeFlavorByName(){
+
 }
+
 
 
 
